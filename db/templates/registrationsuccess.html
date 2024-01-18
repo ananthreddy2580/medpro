@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Successful</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+        input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;s
+  cursor: pointer;
+  position: relative; top: 10px; left: 15%;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+        .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+        .cn {
+        padding:20px;
+        margin:10px
+        }
+        .clr {
+        color:green;
+        }
+    </style>
+</head>
+<body style="background-color:#f2f2f2">
+<div class="container">
+    <div class="cn">
+<h3 class="clr">You have successfully registered the product</h3>
+        <br>
+<h4> If you have to register more products please click the button Register More</h4>
+    </div>
+<br>
+    <form action="registermore" method="post">
+        {% csrf_token %}
+    <div class="row">
+    <input  type="submit" value="Register More">
+    </div>
+    </form>
+</div>
+</body>
+</html>

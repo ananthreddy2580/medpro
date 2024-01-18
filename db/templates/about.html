@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>About us</title>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3e3939;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #3a3838;
+  }
+  .active {
+      background-color: #2e5e4c;
+    }
+ p {
+    padding: 20px;
+    margin:30px;
+    display: inline-flexbox;
+ }
+</style>
+</head>
+<body style="background-color:#f2f2f2">
+<H1 style="text-align: center"> Allweld Engineers Private Limited</H1>
+    <ul>
+        <li><a href="{% url 'index'%}">Products</a></li>
+        <li><a href="{% url 'display'%}">Display Result</a></li>
+        <li ><a class="active">About</a></li>
+      </ul>
+      <h2>About</h2>
+      <p><strong> Allweld Engineers Private Limited</strong> an ISO 9001-2008 company started during 1993 with a goal to produce custom built Engineering equipments.
+
+        It has been catering to various reputed public sector and private sectors viz. Indian Navy, M/s Larsen & Toubro Ltd, M/s BEL, M/s BEML, M/s Tisco, M/s L&T Komatsu, M/s SAIL and many more.
+        
+        The company has successfully developed various assemblies like Movable keel block mechanism, stabilized platform actuators, Hydraulic systems for self-climbing equipments, Hydraulic cylinders of large capacity earth moving machines etc.
+        
+        The company has design facility of SOLIDWORKS with solid modeling, cosmos, and simulation to conduct Finite Element Analysis of components and assemblies for static load, fatigue, Buckling, Drop test, Thermal, Frequency & Seismic test.
+        
+        The company has ERP (Enterprise Resource Planning) system with all information available regarding production, quality, stores, purchase, personnel, marketing & accounts.
+        
+        The production and quality team ensures product quality from the inception to its delivery and thereafter service team ensures smooth functioning of products.</p>
+
+    </body>
+    </html>
